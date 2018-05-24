@@ -8,7 +8,7 @@ def key_for_min_value(name_hash)
   values = name_hash.collect{ |name, price| price }
   name_hash.each do |name, price|
     if price == values.min
-      price
+      return price
     end
   end
 end
